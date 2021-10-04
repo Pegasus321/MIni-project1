@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage</title>
+        <style>
+      #site_wrapper {
+  position: relative;
+  min-height: 150px;
+  display: block;
+}
+
+
+#footer {
+  width: 100%;
+  height: 20px;
+  color: black;
+  font-size: 12px;
+  text-align: center;
+  border-top-style: solid;
+  border-top-width: medium;
+  border-top-color: #807B7A;
+  position: absolute;
+  bottom: 0;
+}
+    </style>
+        <!-- Favicon-->
+        <!-- Bootstrap icons-->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/styles2.css" rel="stylesheet" />
+        <link rel="favicon" href="/public/favicon.ico">
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" method="post" action="/myCart">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+<hr style="
+        width: 100%;
+        margin-top:0;
+        opacity: 1;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+      ">
+      <div class="container-fluid" id="product-section">
+        <div class="row">
+         <div class="col-md-6">
+           <div class="col-md-6">
+      <img height="500px"
+       src="R.jfif"
+       alt="Trial"
+       class="image-responsive"
+      />
+     </div>
+         </div>
+         <div class="col-md-6">
+      <div class="row">
+       <div class="col-md-12">
+        <h1>Kodak 'Brownie' Flash B Camera</h1>
+      </div>
+     </div><!-- end row-->
+     <div class="row">
+     <div class="col-md-12">
+      <span class="label label-primary">Vintage</span>
+      <span class="monospaced">No. 1960140180</span>
+     </div>
+    </div><!-- end row -->
+    <div class="row">
+     <div class="col-md-12">
+      <p class="description">
+       Classic film camera. Uses 620 roll film.
+       Has a 2&frac14; x 3&frac14; inch image size.
+      </p>
+     </div>
+    </div><!-- end row -->
+    <div class="row">
+     <div class="col-md-3">
+      <span class="sr-only">Four out of Five Stars</span>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star"></i>
+     </div>
+    </div><!-- end row -->
+    <div class="row">
+     <div class="col-md-12 bottom-rule">
+      <h2 class="product-price">$129.00</h2>
+     </div>
+    </div><!-- end row -->
+
+    <div class="row add-to-cart">
+     <div class="col-md-5 product-qty">
+       <form  action="/product" method="post">
+
+      <span class="btn btn-default btn-lg btn-qty">
+       <i onclick="add()"   class="bi bi-plus-lg"></i>
+      </span>
+      <input class="btn btn-default btn-lg btn-qty" name="addtocart" value="1" />
+      <span class="btn btn-default btn-lg btn-qty">
+        <i onclick="subtract()"  class="bi bi-dash-lg"></i>
+      </span>
+
+     </div>
+
+     <div class="col-md-4">
+      <button style="background-color:black;color:white;"   class="btn btn-lg btn-brand btn-full-width">
+       Add to Cart
+      </button>
+     </div>
+   </form>
+    </div><!-- end row -->
+
+    <div class="row">
+     <div class="col-md-4 text-center">
+      <span class="monospaced">In Stock</span>
+     </div>
+     <div class="col-md-4 col-md-offset-1 text-center">
+      <a class="monospaced" href="#">Add to Shopping List</a>
+     </div>
+    </div><!-- end row -->
+    <div class="row">
+     <div class="col-md-12 bottom-rule top-10"></div>
+    </div><!-- end row -->
+
+
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+    <p href="#description"
+    aria-controls="description"
+    role="tab"
+    data-toggle="tab"
+    >Description</p>
+    </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+     <div role="tabpanel" class="tab-pane active" id="description">
+      ...
+     </div>
+     <div role="tabpanel" class="tab-pane top-10" id="features">
+      ...
+     </div>
+     <div role="tabpanel" class="tab-pane" id="notes">
+      ...
+     </div>
+     <div role="tabpanel" class="tab-pane" id="reviews">
+      ...
+     </div>
+    </div>
+    <div role="tabpanel" class="tab-pane active" id="description">
+     <p class="top-10">
+      The 'Brownie' Flash B is a box camera taking 2&frac14; × 3&frac14;" frames on 620 film, made of sheet metal by Kodak Ltd. in England, 1958-60.
+      A more luxurious version of the Brownie Six-20 Model F, it has a two-speed shutter (1/80, 1/40 +B), a close-focus (5-10ft) lens, a yellow filter and flash sync. The Flash B is very similar to the Brownie Flash IV, adding a two-speed shutter but lacking a tripod bush.
+     </p>
+
+    </div>
+
+
+
+
+        </div>
+        </div><!-- end row -->
+       </div><!-- end container -->
+
+
+
+       <script>
+ function add() {
+     let a = ($('input').val())*1;
+     $('input').val(a+1);
+     console.log(a+1);
+ }
+ function subtract() {
+     let a = ($('input').val())*1;
+     $('input').val(a-1);
+     console.log(a-1);
+ }
+
+ </script>
+
+
+
+       <script
+            src="https://code.jquery.com/jquery-2.2.2.min.js"
+            integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
+            crossorigin="anonymous"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+
+
+            <div id="site_wrapper">
+            <footer id="footer" >
+                <div><p>Copyright &copy; Your Website 2021</p></div>
+            </footer>
+            </div>
+            <!-- Bootstrap core JS-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Core theme JS-->
+            <script src="js/scripts.js"></script>
+            </body>
+            </html>
